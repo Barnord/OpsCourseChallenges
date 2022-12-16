@@ -27,7 +27,6 @@ do
       ;;
     *)
       echo -n "Unrecognized response."
-      userInput=5
       ;;
   esac
   echo 
