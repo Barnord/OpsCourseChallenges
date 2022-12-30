@@ -7,14 +7,13 @@ import os
 # Declaration of variables
 
 ### Read user input here into a variable
-print("Please enter the filepath for your chosen directory.")
-userInput = input()
+userInput = input("Please enter the filepath for your chosen directory.\n")
 # Declaration of functions
 
 ### Declare a function here
 
-def walker():
-  for (root, dirs, files) in os.walk("testdir"):
+def walker(userInput):
+  for (root, dirs, files) in os.walk(userInput):
       ### Add a print command here to print ==root==
       print(root)
       ### Add a print command here to print ==dirs==
@@ -23,6 +22,7 @@ def walker():
       print(files)
 
 # Main
+walker(userInput)
 
 ### Pass the variable into the function here
 
