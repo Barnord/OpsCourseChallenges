@@ -10,7 +10,7 @@ adrs = input()
 
 while True:
   logs = open('logs.txt', 'a')
-  lstPng = subprocess.run(['ping', '-c', '1', adrs], capture_output=True).returncode
+  lstPng = subprocess.run(['ping', '-c1', adrs], capture_output=True).returncode
   stamp = datetime.now()
   if lstPng == 0:
     result = f'{stamp}, {adrs}, Network Active'
