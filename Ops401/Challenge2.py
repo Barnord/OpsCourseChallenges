@@ -9,7 +9,7 @@ print("Please enter an IP to ping.")
 adrs = input()
 
 while True:
-  logs = open('logs.txt', 'a+')
+  logs = open('logs.txt', 'a')
   lstPng = subprocess.run(['ping', '-c', '1', adrs], capture_output=True).returncode
   stamp = datetime.now()
   if lstPng == 0:
