@@ -9,7 +9,7 @@ def theThing():
   line = doc.readline()
 
   while line:
-    line.rstrip()
+    line = line.rstrip()
     print(line)
     time.sleep(1)
     line = doc.readline()
